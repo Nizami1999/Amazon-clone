@@ -1,0 +1,86 @@
+#register {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 40px;
+
+    img.lofo-img {
+        height: 31px;
+        width: 103px;
+        object-fit: contain;
+        margin-bottom: 20px;
+    }
+
+    .login-card {
+        background-color: #ffffff;
+        width: 100%;
+        border: 1px solid #D5D9D9;
+        border-radius: 4px;
+        padding: 20px 26px;
+
+        .title {
+            font-size: 30px;
+            margin-bottom: 24px;
+        }
+
+        form {
+            label {
+                display: block;
+                font-size: 14px;
+                font-weight: 500;
+                margin-bottom: 10px;
+            }
+
+            input {
+                width: 100%;
+                border-radius: 3px;
+                border: 1px solid #bec5c5;
+                height: 31px;
+                padding: 3px 7px;
+                margin-bottom: 15px;
+                outline: none;
+            }
+
+            input:focus {
+                box-shadow: #f2941b 0px 0px 5px;
+            }
+
+            p {
+                font-size: 12px;
+                margin-top: 15px;
+            }
+        }
+    }
+
+    .divider {
+        background-color: #bec5c5;
+        width: 100%;
+        position: relative;
+        height: 1px;
+        margin: 20px 26px;
+
+        h5 {
+            position: absolute;
+            top: -7px;
+            padding: 0 15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #EDEEEF;
+            color: #888888;
+            font-weight: normal;
+        }
+    }
+
+    >a {
+        width: 100%;
+        display: block;
+        button.btn-submit {
+            background-color: #b8c6db;
+            background-image: linear-gradient(360deg, #d2ddec 0%, #eff0f1 74%)
+        }
+    }
+
+}

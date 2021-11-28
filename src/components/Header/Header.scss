@@ -1,0 +1,136 @@
+nav.nav {
+    z-index: 100;
+    position: sticky;
+    top: 0;
+    padding: 11px 0;
+    background-color: rgb(20, 25, 33);
+    color: #ffffff;
+
+    .nav-wrapper {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .logo {
+            img {
+                height: 28px;
+                width: 100%;
+                object-fit: contain;
+            }
+        }
+
+        .search-input {
+            display: flex;
+            align-items: center;
+
+            input {
+                padding: 8px;
+                border: none;
+                border-radius: 6px;
+                outline: none;
+                border: 2px solid transparent;
+                border-top-right-radius: 0;
+                border-bottom-right-radius: 0;
+                width: 500px;
+            }
+
+            @media screen and (max-width: 991px) {
+                input {
+                    width: 100%;
+                }
+            }
+
+            input:focus {
+                border: 2px solid rgb(242, 148, 27);
+            }
+
+            >i {
+                cursor: pointer;
+                display: block;
+                padding: 10.5px;
+                border-top-right-radius: 6px;
+                border-bottom-right-radius: 6px;
+                font-size: 14px;
+                color: black;
+                background-color: #FEBD68;
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+        }
+
+        @media screen and (max-width: 643px) {
+            .search-input {
+                display: none;
+            }
+        }
+
+        .other {
+
+            .login-user {
+                color: white;
+            }
+
+            display: flex;
+            align-items: center;
+            gap: 24px;
+
+            .user,
+            .order {
+                cursor: pointer;
+
+                h6 {
+                    font-size: 12px;
+                    font-weight: 300;
+                }
+
+                h5 {
+                    font-size: 14px;
+                }
+            }
+
+            .order:hover {
+                text-decoration: underline;
+            }
+
+            // @media screen and (max-width: 417px) {
+
+            //     .user,
+            //     .order {
+            //         display: none;
+            //     }
+
+            //     .user {
+            //         a {
+            //             color: #ffffff
+            //         }
+            //     }
+            // }
+
+
+
+            .checkout {
+                color: #ffffff;
+                position: relative;
+                display: flex;
+                align-items: center;
+
+                >i {
+                    font-size: 20px;
+                    color: #ffffff;
+                    margin-right: 10px;
+                }
+
+                .count {
+                    position: absolute;
+                    top: -17px;
+                    left: 8px;
+                    color: #F08805;
+                }
+            }
+        }
+
+    }
+
+
+}

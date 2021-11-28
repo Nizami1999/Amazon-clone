@@ -1,0 +1,51 @@
+#checkout {
+
+    .product {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+        padding: 20px;
+
+
+        .product-img {
+            flex: 1;
+            height: 250px;
+            width: 300px;
+            padding: 0;
+            margin: 0;
+            display: block;
+            object-fit: contain;
+        }
+
+        @media screen and (max-width: 425px) {
+            .product-img {
+                width: 100%;
+            }
+        }
+
+        .product-details {
+            flex: 3;
+
+            .product-name {
+                font-size: 22px;
+                font-weight: 300;
+            }
+
+            .product-price {
+                font-size: 24px;
+                font-weight: bold;
+                margin: 10px 0;
+            }
+
+            .product-rate {
+                font-size: 14px;
+            }
+
+            .btn-basket {
+                margin-top: 24px;
+                margin-left: 0;
+                margin-right: 0;
+            }
+        }
+    }
+}

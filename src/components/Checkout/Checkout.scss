@@ -1,0 +1,23 @@
+#checkout {
+    margin-top: 24px;
+
+    .basket-cart {
+        background-color: #ffffff;
+        padding: 18px;
+
+        .title {
+            font-size: 30px;
+            font-weight: 300;
+        }
+
+        .line {
+            height: 1px;
+            width: 100%;
+            background-color: #DDDDDD;
+            margin-top: 10px;
+        }
+        .warning{
+            margin-top: 24px;
+        }
+    }
+}

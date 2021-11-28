@@ -1,0 +1,39 @@
+.home {
+
+    .product {
+        background-color: #ffffff;
+        padding: 20px;
+        flex: 1;
+
+        .product-name {
+            font-size: 22px;
+            font-weight: 300;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            /* number of lines to show */
+            -webkit-box-orient: vertical;
+        }
+
+        .product-price {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .product-rate {
+            font-size: 14px;
+        }
+
+        img {
+            height: 250px;
+            width: 100%;
+            display: block;
+            padding: 10px 0;
+            margin: 10px auto 20px auto;
+            object-fit: contain;
+        }
+    }
+
+}
